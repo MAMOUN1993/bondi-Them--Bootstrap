@@ -1,0 +1,118 @@
+body{
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 700;
+}
+:root{
+    --dark-color:#19283f;
+    --secund-color:#33d1cc;
+    --primary-color:#ff3150;
+    --blue-offwhite : #eff7fa;
+}
+.blue_offwhite {
+    background-color: var(--blue-offwhite);
+}
+.primary-color{
+    color: var(--secund-color);
+}
+.secund-color{
+    color: var(--secund-color);
+}
+.bg-secund-color{
+    background-color: var(--secund-color);
+}
+.main-bg-dark{
+    background-color: var(--dark-color);
+}
+/* .navbar{
+    background-color: var(--dark-color);
+} */
+.nav-item a[aria-current="page"]{
+    color: var(--secund-color) !important;
+}
+.fa-magnifying-glass{
+    color: var(--secund-color);
+    border-left: 1px solid var(--secund-color);
+}
+.bg-buttun{
+    background-color: var(--primary-color);
+    font-weight: 500;
+}
+.bg-buttun:hover{
+    background-color: var(--primary-color) !important;
+}
+.nav-item .nav-link:hover{
+    color: var(--secund-color) !important;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--secund-color) !important;
+}
+.navbar-toggler:hover{
+    box-shadow: none;
+}
+.landing {
+    height: calc(100vh - 72px);
+}
+
+.main_title::after{
+    position: absolute;
+    content: "";
+    width: 12%;
+    height: 2px;
+    background-color: var(--secund-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10%;
+}
+.ghraphic .bigger{
+    font-size: 12rem;
+    opacity: 0.1;
+}
+.ghraphic .smaller{
+    font-size: 4rem;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.protofilio .hovaring:hover{
+    color: var(--primary-color) !important;
+}
+.protofilio .imag_hover::after{
+    position: absolute;
+    content: "Appliction";
+    width: 90%;
+    height: 98%;
+    left: -100%;
+    top: 1%;
+    background-color:#33d1cca2;
+    transition-duration: 0.3s;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+.protofilio .imag_hover:hover::after{
+    left: 5%;
+}
+.protofilio .move_buttun{
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.btn.main-bg-dark:hover{
+    background-color: var(--dark-color);
+}
+.bg-transparent.border.border-0::placeholder{
+    color: white;
+}
+.bg-transparent.border.border-0:focus{
+    outline: none;
+}
+.footer .brands li {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
